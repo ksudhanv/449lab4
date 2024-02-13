@@ -3,48 +3,225 @@ body {
     color: #EAE8FF;
     background: #2D3142;
     padding: 0 40px;
-    text-align: center;
-}
-
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    list-style-type: none;
-    margin: 0;
-}
-
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+    font-size: 20px;
 }
 
 h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+main {
+    display: grid;
+    grid-template-columns: repeat( 5,2fr);
+    gap: 30px;
+    color: black;
+    text-align: center;
 }
-
-img.about {
-    opacity: 0.5;
+strong {
+    font-size: 35px;
+}
+.sun {
+    grid-column-start: 1;
+    grid-column-end: 2 ;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: color 1s ease;
+    transition: background 1s ease;
+    border-radius: 10px;
+}
+.sun:hover {
+    background: #FDB813;
+}
+.sun-dot {
+    background-color: #FDB813;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.mercury{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: color 1s ease;
+    transition: background 1s ease;
+    padding-bottom: 25%;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.mercury:hover {
+    background: #B7B8B9;
+}
+.mercury-dot {
+    background-color: #B7B8B9;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    margin-top: 25%;
+    margin-bottom: 20px;
+}
+.venus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: color 1s ease;
+    transition: background 1s ease;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.venus:hover {
+    background: #f8e2b0;
+}
+.venus-dot {
+    background-color: #f8e2b0;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.earth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: color 1s ease;
+    transition: background 1s ease;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.earth:hover {
+    background: #4f4cb0;
+}
+.earth-dot {
+    background-color: #4f4cb0;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.mars{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: color 1s ease;
+    transition: background 1s ease;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.mars:hover {
+    background: #741630;
+}
+.mars-dot {
+    background-color: #741630;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.jupiter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: color 1s ease;
+    transition: background 1s ease;
+    padding-bottom: 25%;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.jupiter:hover {
+    background: #d0a47a;
+}
+.jupiter-dot {
+    background-color: #d0a47a;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    margin-top: 25%;
+    margin-bottom: 20px;
+}
+.saturn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: color 1s ease;
+    transition: background 1s ease;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.saturn:hover {
+    background:  #c4b08b;
+}
+.saturn-dot {
+    background-color:  #c4b08b;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.uranus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: color 1s ease;
+    transition: background 1s ease;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.uranus:hover {
+    background: #ACE5EE;
+}
+.uranus-dot {
+    background-color: #ACE5EE;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.neptune{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: color 1s ease;
+    transition: background 1s ease;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.neptune:hover {
+    background: #78C0A8;
+}
+.neptune-dot {
+    background-color: #78C0A8;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
